@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class CentroidofTriangle
+{
+    public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    double a,b,c,d,e,f,Cen,gen;
+    a=sc.nextDouble();
+    b=sc.nextDouble();
+    c=sc.nextDouble();
+    d=sc.nextDouble();
+    e=sc.nextDouble();
+    f=sc.nextDouble();
+    Cen=(a+b+c)/3;
+    gen=(d+e+f)/3;
+System.out.println("CentroidofTriangle= "+Cen+gen);
+sc.close();
+
+}
+}
