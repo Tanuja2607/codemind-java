@@ -1,0 +1,8 @@
+public class CommandlineAreaofCircle {
+    public static void main(String args[])
+    {
+        double r=Double.parseDouble(args[0]);
+        double res=(3.14*r*r);
+        System.out.println(res);
+    }
+}
