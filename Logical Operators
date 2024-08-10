@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class LogicalOperator {
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        {
+            int x,y,z;
+            x=sc.nextInt();
+            y=sc.nextInt();
+            z=sc.nextInt();
+            System.out.println((x>y) && (x>z));
+            boolean res=((y>x) && (y++>z));
+            System.out.println(res);
+            System.out.println(y);
+            sc.close();
+        }
+
+    }
+}
