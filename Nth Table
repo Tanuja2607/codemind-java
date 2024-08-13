@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class nthTable  {
+    public static void print(int n,int m)
+    {
+        for(int i=1;i<=m;i++)        
+        {
+           // System.out.print(i+" ");
+            System.out.println("n x "+i+" = "+(n*i));
+        }
+    }
+   public static void main(String args[])
+   {
+    Scanner sc=new Scanner(System.in);
+    int n,m;
+    n=sc.nextInt();
+    m=sc.nextInt();
+    print(n,m);
+    sc.close();
+   } 
+}
+
+    
