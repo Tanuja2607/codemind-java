@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class ArithementSequence
+{
+public static void main(String args[]) 
+{
+ Scanner sc=new Scanner(System.in);
+ float a,n,d,res;
+ a=sc.nextFloat();
+ n=sc.nextFloat();
+ d=sc.nextFloat();
+ res=(float)(a+(n-1)*d);
+ System.out.println("Arithematic Sequence= "+res);
+ sc.close(); 
+} 
+}
