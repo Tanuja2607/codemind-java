@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class AreaofSeries
+{
+  public static void main(String args[])
+{
+   Scanner sc=new Scanner(System.in);
+   float n,a,l,sn;
+   n=sc.nextFloat();
+   a=sc.nextFloat();
+   l=sc.nextFloat();
+   sn=(float)((n/2)*(a+l));
+   System.out.println("AreaofSeries= "+sn);
+   sc.close();    
+}
+}
