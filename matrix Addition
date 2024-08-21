@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class MatrixAddition 
+{
+public static void add(int M1[][],int M2[][],int row,int col)
+ {int M3[][]=new int [row][col];
+    for(int i=0;i<row;i++)
+    {
+       for(int j=0;j<col;j++)
+        {
+         M3[i][j]= M1[i][j]+ M2[i][j];
+        }
+    }
+    System.out.println("The sum of Matrix1 and Matrix2 is:");
+    for(int i=0;i<row;i++)
+    {
+       for(int j=0;j<col;j++)
+        {
+         System.out.println(M3[i][j]+" ");
+        }
+        System.out.println();
+    } 
+}
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int row,col,mat1[][],mat2[][];
+    row=sc.nextInt();
+    col=sc.nextInt();
+    mat1=new int[row][col];
+    mat2=new int[row][col];
+    System.out.println("enter matrix 1 elements");
+
+    for(int i=0;i<row;i++)
+    {
+       for(int j=0;j<col;j++)
+        {
+         mat1[i][j]=sc.nextInt();
+        }
+    }
+    System.out.println("enter matrix 2 elements");
+    for(int i=0;i<row;i++)
+    {
+       for(int j=0;j<col;j++)
+        {
+         mat2[i][j]=sc.nextInt();
+        }
+}
+/*System.out.println("First Matrix is: ");
+displayMatrix(mat1);
+System.out.println("First Matrix is: ");
+displayMatrix(mat2);*/
+MatrixAddition.add(mat1,mat2,row,col);
+}
+}
