@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class wer
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        n=sc.nextInt();
+        if(n==(2*3) || n==(3*5) || n==(5*2)  || n==(2*3*5))
+        {
+            System.out.println("ugly number");
+        }
+        else{
+            System.out.println("not Ugly number");
+        }
+    }
+}
