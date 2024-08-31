@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Salary
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double bs,h,d,p,g;
+        bs=sc.nextDouble();
+        h=sc.nextDouble();
+        d=sc.nextDouble();
+        p=(0.12*bs);
+        g=(bs+h+d+p);
+        System.out.printf("%.2f\n",p);
+        System.out.printf("%.2f",g);
+    }
+}
